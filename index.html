@@ -93,12 +93,12 @@
 </style></head>
 <body class="transition-colors duration-300 bg-white dark:bg-gpt-body text-neutral-dark dark:text-white">
 <header class="bg-wood-light dark:bg-gpt-header shadow-md fixed top-0 left-0 right-0 z-50 rounded-b-lg transition-colors duration-300 border-b-4 border-accent dark:border-transparent">
-<div class="container mx-auto px-4 md:px-6 py-2 flex justify-between items-center">
+<div class="container mx-auto px-4 md:px-6 py-2 flex items-center"> <!-- Removed justify-between -->
 <a class="flex items-center" href="#">
 <img alt="夏天民宿 Logo" class="h-24 md:h-28 w-auto rounded" src="images/summer.png" loading="lazy"/>
-<span class="ml-3 text-3xl md:text-4xl font-poppins font-bold text-primary dark:text-primary-light">夏天-民宿</span>
+<span class="ml-3 text-3xl md:text-4xl font-poppins font-bold text-wood-dark dark:text-white">夏天-民宿</span> <!-- Changed text color -->
 </a>
-<nav class="hidden md:flex items-center space-x-1 lg:space-x-2" id="desktop-menu-items">
+<nav class="hidden md:flex items-center space-x-1 lg:space-x-2 ml-auto" id="desktop-menu-items"> <!-- Added ml-auto to push nav right -->
 <a class="text-wood-darker dark:text-white hover:text-accent dark:hover:text-gpt-link rounded p-2 transition duration-300 text-sm" data-i18n-key="nav.home" href="#hero">首頁</a>
 <a class="text-wood-darker dark:text-white hover:text-accent dark:hover:text-gpt-link rounded p-2 transition duration-300 text-sm" data-i18n-key="nav.about" href="#about">關於我們</a>
 <a class="text-wood-darker dark:text-white hover:text-accent dark:hover:text-gpt-link rounded p-2 transition duration-300 text-sm" data-i18n-key="nav.rooms" href="#rooms">房型介紹</a>
@@ -370,7 +370,8 @@
                  </ul>
             </div>
             <div class="map-container rounded-lg overflow-hidden shadow-lg border border-wood-DEFAULT dark:border-gray-700">
-                 <iframe allowfullscreen="" height="350" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="http://googleusercontent.com/maps/embed?pb=!1m18!1m12!1m3!1d... (你的地圖嵌入碼)" style="border:0;" title="夏天民宿 Google 地圖位置">
+                 <!-- Re-inserting a placeholder Google Maps embed URL -->
+                 <iframe allowfullscreen="" height="350" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3683.053155799195!2d121.5645396149594!3d22.03055598555811!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34601449b4f2c00f%3A0x6b8f1c8f1e5a5a5!2sLanyu%20Summer%20Homestay!5e0!3m2!1sen!2stw&output=embed" style="border:0;" title="夏天民宿 Google 地圖位置">
                 </iframe>
             </div>
         </div>
@@ -545,7 +546,123 @@
                 'location.arrival_option3': ' ',
                 'location.map_placeholder_title': 'Map Area',
                 'location.map_placeholder_desc': '(Embed Google Maps recommended)',
-                'location.map_button': '在 Google Maps 開啟',
+                'location.map_button': 'Open in Google Maps',
+                'contact.title': '聯絡夏天民宿',
+                'contact.subtitle': '有任何疑問，或是心動想訂房了？別害羞，透過下面任何一個方式聯絡我們吧！',
+                'contact.phone_label': '電話:',
+                'contact.line_label': 'Line ID:',
+                'contact.address_label': '地址:',
+                'contact.address_detail': '蘭嶼鄉東清村48號',
+                'contact.ig_label': 'Instagram:',
+                'contact.fb_label': 'Facebook:',
+                'contact.fb_value': '', // 已刪除內容
+                'footer.copyright': '© 2025 夏天 - 蘭嶼民宿. All Rights Reserved.'
+            },
+            'en': {
+                 'meta.description': 'Summer Homestay: Experience the tranquility and warmth of Lanyu\'s Dongqing Village. Offering comfortable dorm, exquisite double, and comfortable triple rooms for an authentic Lanyu experience.',
+                'logo.prefix': 'Summer',
+                'logo.suffix': 'Homestay',
+                'nav.home': 'Home',
+                'nav.about': 'About Us',
+                'nav.rooms': 'Rooms',
+                'nav.tours': 'Tours',
+                'nav.offers': 'Offers',
+                'nav.location': 'Location',
+                'nav.contact': 'Contact Us', // 更新導航文字
+                'nav.theme_toggle_aria_label': 'Toggle theme',
+                'hero.title': 'Welcome Lanyu\'s Dawn and Waves',
+                'hero.slogan': 'Stay in Dongqing Village, feel the summer vibe of Lanyu.',
+                'hero.subtitle': 'Experience the purest island life at Summer Homestay.',
+                'hero.button': 'Explore Rooms',
+                'hero.image_alt': 'Lanyu Dongqing Bay sunrise view',
+                'highlights.rooms.title': 'Cozy Rooms',
+                'highlights.rooms.desc': 'Dorm, Double, Triple rooms available',
+                'highlights.tours.title': 'Local Tours',
+                'highlights.tours.desc': 'Snorkeling, Canoe, Island Tour',
+                'highlights.location.title': 'Dongqing Center',
+                'highlights.location.desc': 'Near beach and sunrise spots',
+                'about.title': 'About Summer Homestay',
+                'about.p1': 'Summer Homestay is located in the beautiful Dongqing Village of Lanyu. We aim to provide travelers with a warm and comfortable resting space like home. Here, you can easily walk to the seaside, greet the first light of dawn each day, and feel the majesty of the Pacific Ocean.',
+                'about.p2': 'We love Lanyu\'s natural scenery and Tao culture, and are happy to share the island\'s bits and pieces with you. Whether you want to relax, explore, or deeply experience local life, Summer Homestay welcomes you.',
+                'about.image_alt': 'Summer Homestay exterior photo',
+                'rooms.title': 'Our Rooms',
+                'rooms.ocean.name': 'Exquisite Double Room',
+                'rooms.ocean.desc': 'Well-decorated space, offering an exquisite and comfortable stay.',
+                'rooms.ocean.price': 'NT$ 2,300 / night',
+                'rooms.ocean.image_alt': 'Summer Homestay Exquisite Double Room photo',
+                'rooms.triple.name': 'Comfortable Triple Room',
+                'rooms.triple.desc': 'A cozy and comfortable space, suitable for small families or a few friends to stay together.',
+                'rooms.triple.price': 'NT$ 2,500 / night',
+                'rooms.triple.image_alt': 'Summer Homestay Comfortable Triple Room photo',
+                'rooms.dorm.name': 'Backpacker Room Type',
+                'rooms.dorm.desc': 'An economical choice to meet travelers from all over and share travel stories.',
+                'rooms.dorm.price': 'NT$ 800 / bed',
+                'rooms.dorm.image_alt': 'Summer Homestay Backpacker Room photo',
+                'tours.title': 'Explore the Beauty of Lanyu',
+                'tours.snorkeling.name': 'Snorkeling Experience',
+                'tours.snorkeling.desc': 'Jump into Lanyu\'s glass-like sea and swim with colorful tropical fish!',
+                'tours.snorkeling.image_alt': 'Snorkel mask and tube icon',
+                'tours.canoe.name': 'Traditional Canoe Experience',
+                'tours.canoe.desc': 'Hop on a hand-built Tao canoe and feel the ancient wisdom of riding the waves.',
+                'tours.canoe.image_alt': 'Tao traditional canoe icon',
+                'tours.island.name': 'Island Tour',
+                'tours.island.desc': 'Hop on a scooter and follow us! We\'ll show you the most beautiful corners of Lanyu and share local stories.',
+                'tours.island.image_alt': 'Lanyu map or scooter tour icon',
+                'tours.owl.name': 'Night Owl Watching',
+                'tours.owl.desc': 'It gets exciting after dark! Let\'s go find Lanyu\'s unique owls and experience the mysterious nightlife.',
+                'tours.owl.image_alt': 'Lanyu Scops Owl icon',
+                'tours.intertidal.name': 'Intertidal Zone Night Tour',
+                'tours.intertidal.desc': 'When the tide goes out, lots of surprises hide under the rocks by the sea! Bring a flashlight and let\'s explore!',
+                'tours.intertidal.image_alt': '潮間帶生物如螃蟹、海星圖示',
+                'tours.underground.name': 'Underground House Tour',
+                'tours.underground.desc': 'Step into the Tao people\'s cool-in-summer, warm-in-winter underground houses and hear stories of ancestral wisdom.',
+                'tours.underground.image_alt': 'Tao underground house icon',
+                'tours.festivals_subtitle': 'Important Cultural Festivals',
+                'tours.festivals_intro': 'Lanyu is home to the Tao people, who have unique cultural and traditional festivals. These festivals are significant to locals and attract many cultural tourists.',
+                'tours.festivals_table.header.name': 'Festival Name',
+                'tours.festivals_table.header.time': 'Time',
+                'tours.festivals_table.header.desc': 'Description',
+                'tours.festivals_table.flying_fish.name': 'Flying Fish Festival',
+                'tours.festivals_table.flying_fish.time': 'Approx. Feb - Jun',
+                'tours.festivals_table.flying_fish.desc': 'The Tao people revere the flying fish as a gift from the sea. Numerous taboos exist during this period. It is Lanyu\'s most iconic cultural event.',
+                'tours.festivals_table.boat_launch.name': 'Launching of the Tatala',
+                'tours.festivals_table.boat_launch.time': 'Eve of Flying Fish Festival',
+                'tours.festivals_table.boat_launch.desc': 'Ceremony for launching the traditional "tatala" canoe. A major tribal ritual. Tourists must respect the ceremony.',
+                'tours.festivals_table.harvest.name': 'Harvest Festival / Year-End Thanksgiving',
+                'tours.festivals_table.harvest.time': 'Approx. Sep - Nov',
+                'tours.festivals_table.harvest.desc': 'A tribal ceremony to thank ancestors and nature, not open to the public, highly sacred.',
+                'tours.festivals_table.music.name': 'Island Music Festival (Lanyu Ocean Concert)',
+                'tours.festivals_table.music.time': 'Irregular (Mainly Summer)',
+                'tours.festivals_table.music.desc': 'Youth-organized music event promoting tribal culture and original music.',
+                'tours.festivals_table.sports.name': 'Lanyu Marathon / Triathlon',
+                'tours.festivals_table.sports.time': 'Late Summer or Early Autumn Annually',
+                'tours.festivals_table.sports.desc': 'Sports events combining sea views and culture, attracting participants.',
+                'offers.title': 'Summer Limited Offers',
+                'offers.earlybird.title': 'Early Bird Discount',
+                'offers.earlybird.desc': 'Want a deal? Book 2+ nights 30 days early and get 10% off! Grab your spot for a slow-paced Lanyu trip now~',
+                'offers.student.title': 'Student Graduation Trip Package',
+                'offers.student.desc': 'Youth means adventure! Gather your friends for a Lanyu grad trip, book with student IDs for enough people, and get scooter discounts or a mystery gift!',
+                'offers.weekday_voucher.title': 'Off-Season Weekday Voucher',
+                'offers.weekday_voucher.desc': 'Want to avoid crowds and enjoy Lanyu\'s tranquility? Buy an off-season weekday voucher for great value and flexibility!',
+                'offers.package_deal.title': 'Vacation Package',
+                'offers.package_deal.desc': 'Seize the long winter/summer break! Gather friends or family to relax in Lanyu, stay at Summer Homestay with package deals including activities or transportation, and enjoy exclusive discounts!',
+                'offers.contact_us': 'Inquire Now »',
+                'faq.facilities_title': 'Homestay Facilities', // 新增民宿設施標題翻譯
+                'faq.facilities_list': '<li>提供 Wi-Fi</li><li>房間內有冷氣</li><li>提供熱水澡</li><li>含早餐服務</li><li>提供洗衣服務</li><li>提供桌遊供旅客使用</li><li>設有公共空間 (如交誼廳、戶外休憩區)</li><li>提供停車位</li><li>公共區域設有飲水機</li><li>各房備有吹風機</li><li>提供基本盥洗用品</li><li>設有曬衣空間</li>', // 新增民宿設施列表翻譯 (HTML 格式)
+                'location.title': '交通資訊',
+                'location.address_title': '民宿地址',
+                'location.address_detail': '蘭嶼鄉東清村48號',
+                'location.transport_title': '如何前往蘭嶼',
+                'location.transport_plane': '<strong class="text-secondary dark:text-secondary-light">搭乘飛機：</strong>從「台東豐年機場」搭乘德安航空19人座小飛機前往「蘭嶼航空站」(約25分鐘)。',
+                'location.transport_ferry': '<strong class="text-primary dark:text-primary-light">搭乘船班：</strong>從「台東富岡漁港」或「墾丁後壁湖」搭乘客輪前往「蘭嶼開元港」(航程約2-2.5小時)。',
+                'location.arrival_title': '抵達民宿',
+                'location.arrival_intro': '抵達蘭嶼後，島上主要交通工具為機車。您可以：',
+                'location.arrival_option1': '自行於機場/港口附近租賃機車，再騎車前往民宿。',
+                'location.arrival_option2': '事先聯繫我們，我們可以協助代訂機車或安排接送服務 (可能需額外收費)。',
+                'location.arrival_option3': ' ',
+                'location.map_placeholder_title': 'Map Area',
+                'location.map_placeholder_desc': '(Embed Google Maps recommended)',
+                'location.map_button': 'Open in Google Maps',
                 'contact.title': '聯絡夏天民宿',
                 'contact.subtitle': '有任何疑問，或是心動想訂房了？別害羞，透過下面任何一個方式聯絡我們吧！',
                 'contact.phone_label': '電話:',
