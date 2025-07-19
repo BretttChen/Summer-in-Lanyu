@@ -99,10 +99,13 @@
 </head>
 <body class="transition-colors duration-300 bg-white dark:bg-gpt-body text-neutral-dark dark:text-white">
 <header class="bg-wood-light dark:bg-gpt-header shadow-md fixed top-0 left-0 right-0 z-50 rounded-b-lg transition-colors duration-300 border-b-4 border-accent dark:border-transparent">
-<div class="container mx-auto px-4 md:px-6 py-2 flex items-center justify-start"> <a class="flex items-center" href="#">
+<div class="container mx-auto px-4 md:px-6 py-2 flex items-center justify-start"> <!-- Changed to justify-start for left alignment -->
+<a class="flex items-center" href="#">
 <img alt="夏天民宿 Logo" class="h-24 md:h-28 w-auto rounded" src="images/summer.png" loading="lazy"/>
-<span class="ml-3 text-3xl md:text-4xl font-poppins font-bold text-wood-dark dark:text-white">夏天-民宿</span> </a>
-<nav class="hidden md:flex items-center space-x-1 lg:space-x-2 ml-auto" id="desktop-menu-items"> <a class="text-wood-darker dark:text-white hover:text-accent dark:hover:text-gpt-link rounded p-2 transition duration-300 text-sm" data-i18n-key="nav.home" href="#hero">首頁</a>
+<span class="ml-3 text-3xl md:text-4xl font-poppins font-bold text-wood-dark dark:text-white">夏天-民宿</span> <!-- Changed text color to wood-dark -->
+</a>
+<nav class="hidden md:flex items-center space-x-1 lg:space-x-2 ml-auto" id="desktop-menu-items"> <!-- Added ml-auto to push nav right -->
+<a class="text-wood-darker dark:text-white hover:text-accent dark:hover:text-gpt-link rounded p-2 transition duration-300 text-sm" data-i18n-key="nav.home" href="#hero">首頁</a>
 <a class="text-wood-darker dark:text-white hover:text-accent dark:hover:text-gpt-link rounded p-2 transition duration-300 text-sm" data-i18n-key="nav.about" href="#about">關於我們</a>
 <a class="text-wood-darker dark:text-white hover:text-accent dark:hover:text-gpt-link rounded p-2 transition duration-300 text-sm" data-i18n-key="nav.rooms" href="#rooms">房型介紹</a>
 <a class="text-wood-darker dark:text-white hover:text-accent dark:hover:text-gpt-link rounded p-2 transition duration-300 text-sm" data-i18n-key="nav.tours" href="#tours">在地體驗</a>
@@ -113,8 +116,8 @@
 <button class="lang-btn active text-sm" data-lang="zh-TW" id="lang-zh-btn" type="button">繁體</button>
 <button class="lang-btn text-xs" data-lang="en" id="lang-en-btn" type="button">EN</button>
 <button aria-label="Toggle theme" class="ml-2 text-wood-darker dark:text-white hover:bg-wood-DEFAULT dark:hover:bg-gpt-button-hover focus:outline-none focus:ring-4 focus:ring-wood-DEFAULT dark:focus:ring-gray-500 rounded-lg text-sm p-2" data-i18n-key="nav.theme_toggle_aria_label" id="theme-toggle" type="button">
-<svg class="w-4 h-4" fill="currentColor" id="theme-toggle-dark-icon" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
-<svg class="w-4 h-4" fill="currentColor" id="theme-toggle-light-icon" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd"></path></svg>
+<svg class="w-4 h-4" fill="currentColor" id="theme-toggle-dark-icon" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8 0 1010.586 10.586z"></path></svg>
+<svg class="w-4 h-4" fill="currentColor" id="theme-toggle-light-icon" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707-.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd"></path></svg>
 </button>
 </div>
 </nav>
@@ -142,8 +145,8 @@
             <button class="lang-btn active text-sm" data-lang="zh-TW" id="lang-zh-btn-mobile" type="button">繁體</button>
             <button class="lang-btn text-xs" data-lang="en" id="lang-en-btn-mobile" type="button">EN</button>
             <button aria-label="Toggle theme" data-i18n-key="nav.theme_toggle_aria_label" id="theme-toggle-mobile" type="button">
-                <svg class="w-4 h-4" fill="currentColor" id="theme-toggle-dark-icon-mobile" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
-                <svg class="w-4 h-4" fill="currentColor" id="theme-toggle-light-icon-mobile" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd"></path></svg>
+                <svg class="w-4 h-4" fill="currentColor" id="theme-toggle-dark-icon-mobile" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8 0 1010.586 10.586z"></path></svg>
+                <svg class="w-4 h-4" fill="currentColor" id="theme-toggle-light-icon-mobile" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707-.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd"></path></svg>
             </button>
         </div>
     </div>
@@ -152,7 +155,7 @@
 </header>
 <main class="pt-16 md:pt-20">
     <section class="relative h-[65vh] md:h-[70vh] min-h-[380px] md:min-h-[450px] flex items-center justify-center text-center text-white rounded-lg mx-2 md:mx-4 overflow-hidden" id="hero">
-        <img alt="蘭嶼東清灣日出景色" class="absolute inset-0 w-full h-full object-cover" data-i18n-key="hero.image_alt" onerror="this.onerror=null; this.src='https://placehold.co/1400x700/ade8f4/ffffff?text=圖片載入失敗'; this.alt='圖片載入失敗'" src="images/lanyu-hero.png" loading="lazy"/>
+        <img alt="蘭嶼東清灣日出景色" class="absolute inset-0 w-full h-full object-cover" data-i18n-key="hero.image_alt" onerror="this.onerror=null; this.src='https://placehold.co/1400x700/ade8f4/ffffff?text=圖片載入失敗'; this.alt='圖片載載失敗'" src="images/lanyu-hero.png" loading="lazy"/>
         <div class="relative z-10 p-4 md:p-6 rounded-lg">
             <h1 class="text-3xl md:text-5xl lg:text-6xl font-bold mb-2 text-white text-shadow" data-i18n-key="hero.title">迎接蘭嶼的晨曦與浪濤</h1>
             <p class="text-lg md:text-xl lg:text-2xl italic text-primary-light dark:text-white mt-2 mb-3 md:mb-4 text-shadow" data-i18n-key="hero.slogan">入住東清部落，感受蘭嶼的夏日風情。</p>
@@ -307,6 +310,7 @@
                         </tr>
                          <tr class="bg-white dark:bg-gpt-body hover:bg-wood-extralight dark:hover:bg-gpt-button transition">
                              <th class="px-4 py-3 md:px-6 md:py-4 font-medium whitespace-nowrap" data-i18n-key="tours.festivals_table.sports.name" scope="row">蘭嶼環島馬拉松 / 鐵人三項賽事</th>
+                            <td class="px-4 py-3 md:px-6 md:py-4" data-i18n-key="tours.festivals_table.sports.time"></td> <!-- This is where the time will be dynamically inserted -->
                             <td class="px-4 py-3 md:px-6 md:py-4" data-i18n-key="tours.festivals_table.sports.desc">結合海景與文化的體育活動，越來越多外來旅客參加。</td>
                         </tr>
                     </tbody>
@@ -373,6 +377,7 @@
                  </ul>
             </div>
             <div class="map-container rounded-lg overflow-hidden shadow-lg border border-wood-DEFAULT dark:border-gray-700">
+                 <!-- Re-inserting a placeholder Google Maps embed URL -->
                  <iframe allowfullscreen="" height="350" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3683.053155799195!2d121.5645396149594!3d22.03055598555811!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34601449b4f2c00f%3A0x6b8f1c8f1e5a5a5!2sLanyu%20Summer%20Homestay!5e0!3m2!1sen!2stw&output=embed" style="border:0; width:100%;">
                 </iframe>
             </div>
@@ -391,21 +396,17 @@
                     <p><strong class="text-accent dark:text-white" data-i18n-key="contact.phone_label">電話:</strong> 0982-924-641 (鄭先生)</p>
                     <p><strong class="text-accent dark:text-white" data-i18n-key="contact.line_label">Line ID:</strong> @203nkapz</p>
                     <p><strong class="text-accent dark:text-white" data-i18n-key="contact.address_label">地址:</strong> <span data-i18n-key="contact.address_detail">蘭嶼鄉東清村48號</span></p>
-                    <p>
-                        <strong class="text-accent dark:text-white" data-i18n-key="contact.ig_label">Instagram:</strong>
-                        <a class="hover:underline dark:hover:text-gpt-link" href="https://www.instagram.com/" rel="noopener noreferrer" target="_blank" data-i18n-key="contact.ig_value">
-                                </a>
-                    </p>
                      <p>
                         <strong class="text-accent dark:text-white" data-i18n-key="contact.fb_label">Facebook:</strong>
-                        <a class="hover:underline dark:hover:text-gpt-link" data-i18n-key="contact.fb_value" href="https://www.facebook.com/" rel="noopener noreferrer" target="_blank">
-                                </a>
+                        <a class="hover:underline dark:hover:text-gpt-link" data-i18n-key="contact.fb_value" href="https://www.facebook.com/people/%E8%98%AD%E5%B6%BC%E5%A4%8F%E5%A4%A9%E6%B0%91%E5%AE%BF/61574690835577/?locale=zh_TW" rel="noopener noreferrer" target="_blank">蘭嶼夏天民宿</a>
                      </p>
+                     <!-- Logo moved here as requested, and ml-0 applied -->
                      <img alt="夏天民宿 Logo" class="h-72 w-auto mt-8 rounded opacity-80 dark:opacity-60 self-start ml-0" src="images/summer.png" loading="lazy"/>
                 </div>
                 <div class="text-left bg-wood-extralight dark:bg-gpt-body rounded-xl shadow-md border border-wood-light dark:border-transparent p-6 md:p-8">
                     <h3 class="text-xl md:text-2xl font-semibold text-wood-dark dark:text-white mb-4" data-i18n-key="faq.facilities_title">民宿設施</h3>
-                    <ul class="list-disc list-inside text-base md:text-lg text-neutral-dark dark:text-gray-300 space-y-2" data-i18n-key="faq.facilities_list">
+                    <!-- Removed grid classes for single column layout -->
+                    <ul class="list-disc list-inside text-base md:text-lg text-neutral-dark dark:text-gray-300 space-y-2">
                         <li>提供 Wi-Fi</li>
                         <li>房間內有冷氣</li>
                         <li>提供熱水澡</li>
@@ -429,10 +430,8 @@
 <footer class="bg-wood-light dark:bg-gpt-header text-wood-darker dark:text-gray-300 py-6 md:py-8 mt-10 md:mt-16 rounded-t-lg transition-colors duration-300 border-t-4 border-accent dark:border-transparent">
     <div class="container mx-auto px-4 md:px-6 text-center">
         <div class="flex flex-wrap gap-3 mt-6 justify-center mb-4">
-             <a class="bg-[#3b5998] text-white px-4 py-2 rounded hover:opacity-80 text-sm" href="https://www.facebook.com/sharer/sharer.php?u=https://example.com" id="share-facebook" target="_blank">Facebook</a>
+             <a class="bg-[#3b5998] text-white px-4 py-2 rounded hover:opacity-80 text-sm" href="https://www.facebook.com/people/%E8%98%AD%E5%B6%BC%E5%A4%8F%E5%A4%A9%E6%B0%91%E5%AE%BF/61574690835577/?locale=zh_TW" id="share-facebook" target="_blank">Facebook</a>
              <a class="bg-[#00c300] text-white px-4 py-2 rounded hover:opacity-80 text-sm" href="https://social-plugins.line.me/lineit/share?url=https://example.com" id="share-line" target="_blank">LINE</a>
-            <a class="bg-[#dd2a7b] text-white px-4 py-2 rounded hover:opacity-80 text-sm" href="https://www.instagram.com/" target="_blank" title="連結至 Instagram">Instagram</a>
-             <a class="bg-black text-white px-4 py-2 rounded hover:opacity-80 text-sm" href="https://www.threads.net/" target="_blank" title="連結至 Threads">Threads</a>
          </div>
         <p class="text-sm md:text-base" data-i18n-key="footer.copyright">© 2025 夏天 - 蘭嶼民宿. All Rights Reserved.</p>
     </div>
@@ -511,7 +510,7 @@
                 'tours.festivals_table.flying_fish.desc': '達悟族人尊崇飛魚為海洋贈禮，期間禁忌繁多，包括禁捕其他魚種、男女分工明確、舉行祭儀等。是蘭嶼最具代表性的文化活動。',
                 'tours.festivals_table.boat_launch.name': '小船下水祭',
                 'tours.festivals_table.boat_launch.time': '飛魚季前夕',
-                'tours.festivals_table.boat_launch.desc': '傳統拼板舟「tatala」下水儀式，伴隨歌舞與祈福，是部落重大儀式。觀光客須尊重儀式，不可亂拍或靠近。',
+                'tours.festivals_table.boat_launch.desc': '傳統拼板舟下水儀式，伴隨歌舞與祈福，是部落重大儀式。觀光客須尊重儀式，不可亂拍或靠近。',
                 'tours.festivals_table.harvest.name': '收穫祭 / 年終感恩祭',
                 'tours.festivals_table.harvest.time': '約 9～11 月',
                 'tours.festivals_table.harvest.desc': '部落族人感謝祖靈與自然的祭典，不對外公開，具有高度神聖性。建議以尊重的距離觀察。',
@@ -519,7 +518,7 @@
                 'tours.festivals_table.music.time': '不定期（夏季為主）',
                 'tours.festivals_table.music.desc': '青年自辦音樂活動，推廣部落文化、原創音樂，吸引年輕族群與音樂旅客。',
                 'tours.festivals_table.sports.name': '蘭嶼環島馬拉松 / 鐵人三項賽事',
-                'tours.festivals_table.sports.time': '每年夏末或秋初',
+                'tours.festivals_table.sports.time': '每年夏末或秋初', // Added missing time for Marathon/Triathlon
                 'tours.festivals_table.sports.desc': '結合海景與文化的體育活動，越來越多外來旅客參加。',
                 'offers.title': '夏日限定優惠',
                 'offers.earlybird.title': '早鳥預訂優惠',
@@ -553,10 +552,9 @@
                 'contact.line_label': 'Line ID:',
                 'contact.address_label': '地址:',
                 'contact.address_detail': '蘭嶼鄉東清村48號',
-                'contact.ig_label': 'Instagram:',
-                'contact.ig_value': '', // 將此處更改為實際的 IG 顯示文字
+                'contact.ig_label': 'Instagram:', // 保持此鍵值，但對應內容將被移除
                 'contact.fb_label': 'Facebook:',
-                'contact.fb_value': '', // 已刪除內容
+                'contact.fb_value': '蘭嶼夏天民宿', // 更新 Facebook 連結的顯示文字
                 'footer.copyright': '© 2025 夏天 - 蘭嶼民宿. All Rights Reserved.'
             },
             'en': {
@@ -568,7 +566,7 @@
                 'nav.rooms': 'Rooms',
                 'nav.tours': 'Tours',
                 'nav.offers': 'Offers',
-                'nav.location': 'Location',
+                'nav.location': 'Traffic Information',
                 'nav.contact': 'Contact Us', // 更新導航文字
                 'nav.theme_toggle_aria_label': 'Toggle theme',
                 'hero.title': 'Welcome Lanyu\'s Dawn and Waves',
@@ -614,7 +612,7 @@
                 'tours.owl.image_alt': 'Lanyu Scops Owl icon',
                 'tours.intertidal.name': 'Intertidal Zone Night Tour',
                 'tours.intertidal.desc': 'When the tide goes out, lots of surprises hide under the rocks by the sea! Bring a flashlight and let\'s explore!',
-                'tours.intertidal.image_alt': 'Intertidal zone creatures such as crabs, starfish icon',
+                'tours.intertidal.image_alt': '潮間帶生物如螃蟹、海星圖示',
                 'tours.underground.name': 'Underground House Tour',
                 'tours.underground.desc': 'Step into the Tao people\'s cool-in-summer, warm-in-winter underground houses and hear stories of ancestral wisdom.',
                 'tours.underground.image_alt': 'Tao underground house icon',
@@ -625,19 +623,19 @@
                 'tours.festivals_table.header.desc': 'Description',
                 'tours.festivals_table.flying_fish.name': 'Flying Fish Festival',
                 'tours.festivals_table.flying_fish.time': 'Approx. Feb - Jun',
-                'tours.festivals_table.flying_fish.desc': 'The Tao people revere the flying fish as a gift from the sea. Numerous taboos exist during this period, including restrictions on catching other fish species, clear division of labor between men and women, and ritual ceremonies. It is Lanyu\'s most iconic cultural event.',
+                'tours.festivals_table.flying_fish.desc': 'The Tao people revere the flying fish as a gift from the sea. Numerous taboos exist during this period. It is Lanyu\'s most iconic cultural event.',
                 'tours.festivals_table.boat_launch.name': 'Launching of the Tatala',
                 'tours.festivals_table.boat_launch.time': 'Eve of Flying Fish Festival',
-                'tours.festivals_table.boat_launch.desc': 'The launching ceremony for the traditional "tatala" canoe, accompanied by singing, dancing, and blessings. It is a major tribal ritual. Tourists must respect the ceremony and are not allowed to take photos indiscriminately or approach too closely.',
+                'tours.festivals_table.boat_launch.desc': 'Ceremony for launching the traditional "tatala" canoe. A major tribal ritual. Tourists must respect the ceremony.',
                 'tours.festivals_table.harvest.name': 'Harvest Festival / Year-End Thanksgiving',
                 'tours.festivals_table.harvest.time': 'Approx. Sep - Nov',
-                'tours.festivals_table.harvest.desc': 'A tribal ceremony where the community gives thanks to ancestors and nature. It is not open to the public and holds high sacred significance. It is recommended to observe from a respectful distance.',
+                'tours.festivals_table.harvest.desc': 'A tribal ceremony to thank ancestors and nature, not open to the public, highly sacred.',
                 'tours.festivals_table.music.name': 'Island Music Festival (Lanyu Ocean Concert)',
                 'tours.festivals_table.music.time': 'Irregular (Mainly Summer)',
-                'tours.festivals_table.music.desc': 'A youth-organized music event that promotes tribal culture and original music, attracting younger demographics and music tourists.',
+                'tours.festivals_table.music.desc': 'Youth-organized music event promoting tribal culture and original music.',
                 'tours.festivals_table.sports.name': 'Lanyu Marathon / Triathlon',
-                'tours.festivals_table.sports.time': 'Late Summer or Early Autumn Annually',
-                'tours.festivals_table.sports.desc': 'Sports events combining sea views and culture, attracting more and more external participants.',
+                'tours.festivals_table.sports.time': 'Late Summer or Early Autumn Annually', // Added missing time for Marathon/Triathlon
+                'tours.festivals_table.sports.desc': 'Sports events combining sea views and culture, attracting participants.',
                 'offers.title': 'Summer Limited Offers',
                 'offers.earlybird.title': 'Early Bird Discount',
                 'offers.earlybird.desc': 'Want a deal? Book 2+ nights 30 days early and get 10% off! Grab your spot for a slow-paced Lanyu trip now~',
@@ -649,32 +647,31 @@
                 'offers.package_deal.desc': 'Seize the long winter/summer break! Gather friends or family to relax in Lanyu, stay at Summer Homestay with package deals including activities or transportation, and enjoy exclusive discounts!',
                 'offers.contact_us': 'Inquire Now »',
                 'faq.facilities_title': 'Homestay Facilities', // 新增民宿設施標題翻譯
-                'faq.facilities_list': '<li>Wi-Fi available</li><li>Air conditioning in rooms</li><li>Hot water shower available</li><li>Breakfast included</li><li>Laundry service available</li><li>Board games for guests</li><li>Common areas (e.g., lounge, outdoor seating)</li><li>Parking available</li><li>Water dispenser in common areas</li><li>Hair dryer in each room</li><li>Basic toiletries provided</li><li>Drying area available</li>', // 新增民宿設施列表翻譯 (HTML 格式)
-                'location.title': 'Transportation Information',
+                'faq.facilities_list': '<li>提供 Wi-Fi</li><li>房間內有冷氣</li><li>提供熱水澡</li><li>含早餐服務</li><li>提供洗衣服務</li><li>提供桌遊供旅客使用</li><li>設有公共空間 (如交誼廳、戶外休憩區)</li><li>提供停車位</li><li>公共區域設有飲水機</li><li>各房備有吹風機</li><li>提供基本盥洗用品</li><li>設有曬衣空間</li>', // 新增民宿設施列表翻譯 (HTML 格式)
+                'location.title': 'Traffic Information',
                 'location.address_title': 'Homestay Address',
-                'location.address_detail': 'No. 48, Dongqing Village, Lanyu Township',
-                'location.transport_title': 'How to Get to Lanyu',
-                'location.transport_plane': '<strong class="text-secondary dark:text-secondary-light">By Plane:</strong> Take a 19-seater De An Air flight from "Taitung Fengnian Airport" to "Lanyu Airport" (approx. 25 minutes).',
-                'location.transport_ferry': '<strong class="text-primary dark:text-primary-light">By Ferry:</strong> Take a passenger ferry from "Taitung Fugang Fishing Port" or "Kenting Houbihu" to "Lanyu Kaiyuan Port" (approx. 2-2.5 hours journey).',
+                'location.address_detail': 'Lanyu Township, Dongqing Village, No. 48',
+                'location.transport_title': 'How to get to Lanyu',
+                'location.transport_plane': '<strong class="text-secondary dark:text-secondary-light">By Plane:</strong> Take a De-An Airlines 19-seater plane from "Taitung Fengnian Airport" to "Lanyu Airport" (approx. 25 minutes).',
+                'location.transport_ferry': '<strong class="text-primary dark:text-primary-light">By Ferry:</strong> Take a passenger ferry from "Taitung Fugang Fishing Port" or "Kenting Houbihu" to "Lanyu Kaiyuan Port" (approx. 2-2.5 hours).',
                 'location.arrival_title': 'Arriving at the Homestay',
                 'location.arrival_intro': 'Upon arrival in Lanyu, the main mode of transportation on the island is scooter. You can:',
                 'location.arrival_option1': 'Rent a scooter near the airport/port and ride to the homestay yourself.',
-                'location.arrival_option2': 'Contact us in advance, and we can assist with scooter rental arrangements or pick-up service (additional charges may apply).',
+                'location.arrival_option2': 'Contact us in advance, and we can assist with scooter rental or arrange pick-up service (additional fees may apply).',
                 'location.arrival_option3': ' ',
                 'location.map_placeholder_title': 'Map Area',
                 'location.map_placeholder_desc': '(Embed Google Maps recommended)',
                 'location.map_button': 'Open in Google Maps',
                 'contact.title': 'Contact Summer Homestay',
-                'contact.subtitle': 'Any questions, or ready to book? Don\'t be shy, contact us through any of the methods below!',
+                'contact.subtitle': 'Have any questions, or ready to book? Don\'t be shy, contact us through any of the methods below!',
                 'contact.phone_label': 'Phone:',
                 'contact.line_label': 'Line ID:',
                 'contact.address_label': 'Address:',
                 'contact.address_detail': 'No. 48, Dongqing Village, Lanyu Township',
-                'contact.ig_label': 'Instagram:',
-                'contact.ig_value': 'Our Instagram Page', // Added English text for Instagram link
+                'contact.ig_label': 'Instagram:', // 保持此鍵值，但對應內容將被移除
                 'contact.fb_label': 'Facebook:',
-                'contact.fb_value': 'Our Facebook Page', // Added English text for Facebook link
-                'footer.copyright': '© 2025 Summer Homestay - Lanyu. All Rights Reserved.'
+                'contact.fb_value': 'Lanyu Summer Homestay', // 更新 Facebook 連結的顯示文字
+                'footer.copyright': '© 2025 Summer - Lanyu Homestay. All Rights Reserved.'
             }
         };
 // 設定語言函式
@@ -703,7 +700,7 @@
                     }
                     else {
                         // 特殊處理需要換行的段落
-                        if (key === 'about.p1' || key === 'about.p2' || key === 'offers.earlybird.desc' || key === 'offers.student.desc' || key === 'offers.weekday_voucher.desc' || key === 'offers.package_deal.desc' || key === 'location.arrival_intro' || key === 'contact.subtitle') { // Added contact.subtitle here
+                        if (key === 'about.p1' || key === 'about.p2' || key === 'offers.earlybird.desc' || key === 'offers.student.desc' || key === 'offers.weekday_voucher.desc' || key === 'offers.package_deal.desc' || key === 'location.arrival_intro') {
                            element.innerHTML = translation.replace(/\n/g, '<br>');
                         } else {
                            element.textContent = translation; // 更新一般文字內容
